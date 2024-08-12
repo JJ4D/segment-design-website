@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    background-color: #1f1f1f;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 200px;
+}
+
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 50px;
+    background-color: #1f1f1f;
+    top: 0;
+    right: 20px;
+}
+
+
+
+
+/*We are a design agency*/
+
+
+/* Contact Button */
+.contact-btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #111;
+    border-radius: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Hero Text*/
+.hero {
+    text-align: center; /* Centers the content horizontally */
+    padding-top: 450px; /* Optional padding */
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.hero img {
+    display: block; /* Ensures the image starts on a new line */
+    margin: 0 auto; /* Centers the image within its container */
+    width: 1600px; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 100%; /* Ensures the image doesn’t overflow its container */
+    pointer-events: none !important;
+}
+
+
+
+
+/* Expertise */
+.expertise-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.expertise-heading {
+    margin-left: 300px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.expertise-heading h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0;
+}
+
+.expertise-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    width: 95%;
+}
+
+.expertise-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Control how far to the right the list starts */
+    max-width: 1000px; /* You can adjust this value as needed */
+    border-top: 2px solid #444;
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+    margin-left: auto; /* Push the list to the right side */
+}
+
+.expertise-item:last-child {
+    border-bottom: 2px solid #444;
+}
+
+/* Styling for the Number */
+.expertise-number {
+    font-size: 10px; /* Reduce the size for superscript */
+    color: #888;
+    margin-right: 30px;
+    vertical-align: super;
+}
+
+/* Styling for the Text */
+.expertise-text {
+    font-size: 22px;
+    flex: 1;
+    text-align: left; /* Align text to the left for natural flow */
+}
+
+/* Styling for the Plus Sign */
+.expertise-plus {
+    font-size: 30px;
+    color: #888;
+}
+
+
+
+
+  
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 40px;
+    }
+
+    .logo-icon::after {
+        width: 7px;
+        right: 16px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .contact-btn {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-left: 50px;
+    padding-right: 50px;
+    }
+
+    .expertise-heading {
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .expertise-heading h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .expertise-text {
+        font-size: 16px;
+        flex: 1; /* This makes the text take up the remaining space */
+    }
+
+    .expertise-item {
+        padding: 10px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
+    .logo-icon {
+        margin-right: 20px;
+    }
+    
+    .text {
+        font-size: 9px;
+    }
+    
+    .contact-btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .hero {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .expertise-heading {
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .expertise-heading h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .expertise-text {
+        font-size: 12px;
+        flex: 1; /* This makes the text take up the remaining space */
+    }
+
+    .expertise-item {
+        padding: 5px;
+    }
+
+    
+}
